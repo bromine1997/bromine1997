@@ -50,7 +50,7 @@
 ---
 
 ### ⚙️ ATmega4809 Project
-> ATmega4809 기반 다중 페리페럴 제어 시스템 / Microchip Studio
+> ATmega4809 시스템 / Microchip Studio
 
 - SPI · TWI(I2C) · UART 인터페이스 구현
 - Stepp motor 제어, Rotary SW 입력 처리
