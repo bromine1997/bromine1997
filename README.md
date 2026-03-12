@@ -28,30 +28,39 @@
 
 ## 📂 Projects
 
-### 🏥 Android OS-Based IoT Control and Monitoring System for Hyperbaric Oxygen Chambers
-> Graduate Thesis / Tinker Board 2S 기반 고압산소챔버 제어 시스템
+### 🏥 IoT-Based Hyperbaric Oxygen Chamber Control System
+> Graduate Thesis · Tinker Board 2S 기반 고압산소챔버 제어 시스템
 
-- Implemented PID-based pressure control using a 4–20 mA proportional valve
-- Designed sensor/data acquisition interfaces using MAX1032 ADC, AD5420 DAC, and digital isolators
-- Integrated solenoid driver and environmental sensors for pressure, oxygen, carbon dioxide, and humidity monitoring
-- Performed 9-item regulatory validation for medical device requirements
-- Built an IoT monitoring system using WebSocket and REST API
+- PID control (4–20 mA proportional valve)
+- SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
+- Digital isolators (ADUM1400 / ISO7421)
+- Solenoid driver (DRV110)
+- Sensors: MBS3000 · HX93BDC · AO-09 · SprintIR-WX-100
+- 9-item regulatory validation
+- WebSocket + REST API-based IoT monitoring
+
+---
 
 ### 🚲 Rehabilitation Bicycle Force Measurement System
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
 
-- Implemented synchronized 4-channel load-cell acquisition using ADS1232 and interrupt-driven SPI
-- Utilized 2MB PSRAM for extended real-time data logging
-- Developed WebSocket-based monitoring and storage using SPIFFS
-- Supported both text and binary data logging formats
+- 4× ADS1232 interrupt-driven SPI
+- Synchronized acquisition across channels
+- 2MB PSRAM for extended data logging
+- WebSocket-based monitoring using SPIFFS
+- Text / Binary selectable storage
+
+---
 
 ### ⚙️ ATmega4809 Peripheral Control System
-> ATmega4809 기반 제어 시스템 / Microchip Studio
+> ATmega4809 기반 제어 시스템 · Microchip Studio
 
-- Implemented SPI, I2C, and UART peripheral interfaces with interrupt-driven firmware
-- Controlled stepper motor operation and rotary switch input handling
-- Integrated RTC and external EEPROM for timekeeping and data storage
-- Acquired analog sensor data using ADC-based measurement logic
+- Direct implementation of SPI, TWI(I2C), and UART
+- Interrupt-based peripheral handling
+- Stepper motor control and rotary switch input processing
+- RTC (PCF8563 · DS1621) integration
+- External EEPROM (D24FC512) interfacing
+- ADC-based analog sensor acquisition
 
 ---
 
