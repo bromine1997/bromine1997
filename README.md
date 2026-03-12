@@ -1,7 +1,7 @@
 # 안녕하세요 👋 / Hi there
 
-**Biomedical Engineering M.S. · Firmware & Embedded Systems**  
-의료기기 · 산업 인프라를 위한 펌웨어 개발에 관심이 있습니다.
+**회로 설계부터 펌웨어, 제어까지 실제 시스템을 구현하는 임베디드 개발자입니다.**  
+*From schematic to firmware to control — I build systems that work in the real world.*
 
 ---
 
@@ -43,18 +43,18 @@
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
 
 - 4× ADS1232 interrupt-driven SPI, synchronized across channels
-- PSRAM 2MB 활용 — 최대 36분 / 1.65MB 무지연 버퍼링
-- Real-time web monitor via WebSocket (SPIFFS hosted)
+- PSRAM 2MB 활용 — 최대 36분 
+- WebSocket (using SPIFFS) 
 - Text / Binary 선택 저장
 
 ---
 
-### ⚙️ ATmega4809 Project
-> ATmega4809 시스템 / Microchip Studio
+### ⚙️ ATmega4809 Peripheral Control System
+> ATmega4809 기반 제어 시스템 / Microchip Studio
 
-- SPI · TWI(I2C) · UART 인터페이스 구현
-- Stepp motor 제어, Rotary SW 입력 처리
-- RTC (PCF8563 · DS1621), External EEPROM (D24FC512) 
+- SPI · TWI(I2C) · UART 인터페이스 직접 구현 ( Interrupt)
+- Stepper motor 제어, Rotary SW 입력 처리
+- RTC (PCF8563 · DS1621), External EEPROM (D24FC512) 연동
 - ADC 기반 아날로그 센서 수집
 
 ---
@@ -63,3 +63,4 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/bromine1997)
+
