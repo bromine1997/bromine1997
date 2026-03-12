@@ -63,4 +63,5 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/bromine1997)
+[![Blog](https://img.shields.io/badge/Blog-000000?style=flat&logo=tistory&logoColor=white)](https://bromine1997.tistory.com/)
 
