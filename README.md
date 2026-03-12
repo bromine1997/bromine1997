@@ -7,21 +7,28 @@
 
 ## 🛠 Tech Stack
 
-**Microcontrollers**  
+**MCU**  
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![ATmega](https://img.shields.io/badge/ATmega-00979D?style=flat&logo=arduino&logoColor=white)
+![TinkerBoard2S](https://img.shields.io/badge/Tinker%20Board%202S-E6522C?style=flat&logo=asus&logoColor=white)
 
-**Interface & Protocol**  
-![SPI](https://img.shields.io/badge/SPI-555555?style=flat)
-![I2C](https://img.shields.io/badge/I2C-555555?style=flat)
-![UART](https://img.shields.io/badge/UART-555555?style=flat)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat)
-
-**Tools**  
+**Language**  
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00878A?style=flat&logo=arduino&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+
+**IDE**  
+![Microchip Studio](https://img.shields.io/badge/Microchip%20Studio-EE1C25?style=flat)
+![Keil uVision](https://img.shields.io/badge/Keil%20uVision-00599C?style=flat)
+![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
+![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878A?style=flat&logo=arduino&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white)
+
+**PCB Design**  
+![PADS](https://img.shields.io/badge/PADS-0078D7?style=flat)
+
+**Tools**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ---
