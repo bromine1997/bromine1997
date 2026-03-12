@@ -29,9 +29,9 @@
 ## 📂 Projects
 
 ### 🏥 Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology — *Graduate Thesis*
-> Tinker board 2s를 활용한  기반 고압 산소 챔버 제어 시스템 
+> Tinker board 2s를 활용한 고압 산소 챔버 제어 시스템
 
-- PID control ( 비례제어 벨브 4 ~ 20MA )
+- PID control (비례제어 밸브 4~20mA)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420), digital isolators (ADUM1400 / ISO7421)
 - Solenoid driver (DRV110), sensors: MBS3000 · HX93BDC · AO-09 · SprintIR-WX-100
 - 9-item regulatory validation (의료기기 규격 검증 9항목 수행)
@@ -42,10 +42,20 @@
 ### 🚲 Rehabilitation Bicycle Force Measurement
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
 
-- 4× ADS1232 interrupt-driven SPI, synchronized across channels 
+- 4× ADS1232 interrupt-driven SPI, synchronized across channels
 - PSRAM 2MB 활용 — 최대 36분 / 1.65MB 무지연 버퍼링
 - Real-time web monitor via WebSocket (SPIFFS hosted)
 - Text / Binary 선택 저장
+
+---
+
+### ⚙️ ATmega4809 Project
+> ATmega4809 기반 다중 페리페럴 제어 시스템 / Microchip Studio
+
+- SPI · TWI(I2C) · UART 인터페이스 구현
+- Stepp motor 제어, Rotary SW 입력 처리
+- RTC (PCF8563 · DS1621), External EEPROM (D24FC512) 
+- ADC 기반 아날로그 센서 수집
 
 ---
 
