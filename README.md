@@ -28,10 +28,10 @@
 
 ## 📂 Projects
 
-### 🏥 IoT-based Hyperbaric Oxygen Chamber (HBOT) — *Graduate Thesis*
-> STM32 기반 고압 산소 챔버 제어 시스템 / STM32-based safety-critical chamber control system
+### 🏥 Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology — *Graduate Thesis*
+> Tinker board 2s를 활용한  기반 고압 산소 챔버 제어 시스템 
 
-- Dual PID control (pressure + temperature) with **0.67% overshoot**
+- PID control ( 비례제어 벨브 4 ~ 20MA )
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420), digital isolators (ADUM1400 / ISO7421)
 - Solenoid driver (DRV110), sensors: MBS3000 · HX93BDC · AO-09 · SprintIR-WX-100
 - 9-item regulatory validation (의료기기 규격 검증 9항목 수행)
@@ -42,7 +42,7 @@
 ### 🚲 Rehabilitation Bicycle Force Measurement
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
 
-- 4× ADS1232 interrupt-driven SPI, synchronized across channels (채널 간 시간 오차 없음)
+- 4× ADS1232 interrupt-driven SPI, synchronized across channels 
 - PSRAM 2MB 활용 — 최대 36분 / 1.65MB 무지연 버퍼링
 - Real-time web monitor via WebSocket (SPIFFS hosted)
 - Text / Binary 선택 저장
