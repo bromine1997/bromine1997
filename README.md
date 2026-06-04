@@ -1,7 +1,7 @@
 # 안녕하세요 👋 / Hi there
 
-**회로 설계부터 펌웨어, 제어까지 실제 시스템을 구현하는 임베디드 개발자입니다.**  
-*From schematic to firmware to control — I build embedded systems that work in the real world.*
+**문제를 해결하는 임베디드 개발자입니다.**  
+*An embedded developer driven by the need to solve problems.*
 
 ---
 
