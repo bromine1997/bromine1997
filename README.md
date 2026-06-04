@@ -38,16 +38,20 @@
 ### 🏥 IoT-Based Hyperbaric Oxygen Chamber Control System
 > Graduate Thesis · 사물인터넷(IoT) 기술을 활용한 안드로이드OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발에 관한 연구  
 > *Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology*
-
+> 
+- Schematic design using PADS Logic
+- Component selection based on datasheet review (sensors & valve)
+- Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
+- 
 - PID control (4–20 mA proportional valve)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
-- Digital isolators (ADUM1400 / ISO7421)
-- Solenoid driver (DRV110)
+- Digital isolators (ADUM1400 / ADUM1200 / ISO7421)
 - Sensors:
   - MBS3000 · 압력 센서 (4–20 mA)
   - HX93BDC · 온습도 센서 (4–20 mA)
   - AO-09 · 산소 농도 센서 (4–20 mA)
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
+    
 - 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
   
