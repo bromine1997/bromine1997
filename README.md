@@ -50,7 +50,7 @@
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
 - 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
-- 
+  
 ---
 
 ### 🚲 Rehabilitation Bicycle Force Measurement System
