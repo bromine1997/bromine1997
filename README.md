@@ -42,7 +42,7 @@
 - Schematic design using PADS Logic
 - Component selection based on datasheet review (sensors & valve)
 - Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
-- 
+  
 - PID control (4–20 mA proportional valve)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
 - Digital isolators (ADUM1400 / ADUM1200 / ISO7421)
