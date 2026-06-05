@@ -59,12 +59,12 @@
 
 ### 🚲 Rehabilitation Bicycle Force Measurement System
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
-
 - 4× ADS1232 interrupt-driven SPI
 - Synchronized acquisition across channels
 - 2MB PSRAM for extended data logging
 - WebSocket-based monitoring using SPIFFS
 - Text / Binary selectable storage
+- Component selection based on datasheet review
 
 ---
 
