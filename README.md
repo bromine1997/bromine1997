@@ -49,7 +49,7 @@
 - Sensors:
   - MBS3000 · 압력 센서 (4–20 mA)
   - HX93BDC · 온습도 센서 (4–20 mA)
-  - AO-09 · 산소 농도 센서 (4–20 mA)
+  - AO-09 · 산소 농도 센서 (9–13 mA)
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
     
 - 9-item regulatory validation
