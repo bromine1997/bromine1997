@@ -1,0 +1,26 @@
+<svg viewBox="0 0 880 64" width="880" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="footer">
+  <defs><path id="ft" d="M30 10 L850 10"/></defs>
+  <style>
+    .silks { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
+    .trace { fill:none; stroke:#5a4426; stroke-width:2; stroke-linecap:round; }
+    .p { fill:none; stroke:#ffc861; stroke-width:2.2; stroke-linecap:round;
+         stroke-dasharray:30 1000; stroke-dashoffset:1030;
+         animation:flow 4.6s linear infinite; }
+    .pg { stroke-width:7; opacity:.2; }
+    @keyframes flow { to { stroke-dashoffset:0; } }
+    .cursor { animation:blink 1s steps(1,end) infinite; }
+    @keyframes blink { 0%,55%{opacity:1} 56%,100%{opacity:0} }
+    .led { animation:breathe 2.4s ease-in-out infinite; }
+    @keyframes breathe { 0%,100%{opacity:1} 50%{opacity:.4} }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
+  </style>
+  <use href="#ft" class="trace"/>
+  <use href="#ft" class="p pg"/><use href="#ft" class="p"/>
+  <g fill="#0d1117" stroke="#b58b3c" stroke-width="2">
+    <circle cx="24" cy="10" r="4"/><circle cx="856" cy="10" r="4"/>
+  </g>
+  <text x="440" y="44" text-anchor="middle" class="silks" font-size="13" fill="#8b949e">// EOF — 방문해 주셔서 감사합니다 · Thanks for visiting</text>
+  <rect class="cursor" x="672" y="31" width="8" height="16" fill="#58e6ff"/>
+  <circle class="led" cx="40" cy="40" r="4.5" fill="#3fb950"/>
+  <text x="52" y="44" class="silks" font-size="10" fill="#4d5966">SYSTEM ONLINE</text>
+</svg>

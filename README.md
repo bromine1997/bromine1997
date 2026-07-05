@@ -1,9 +1,15 @@
-# 안녕하세요 👋 / Hi there
+<div align="center">
+  <img src="./assets/header.svg" alt="서보민 (Bromine) — Embedded Developer" width="100%"/>
+</div>
 
+<<<<<<< HEAD
 **문제를 해결하는 임베디드 개발자입니다.**  
 *An embedded developer driven by the need to solve problems.*
 
 ---
+=======
+<img src="./assets/divider.svg" alt="" width="100%"/>
+>>>>>>> 96c2402 ( md 파일 수정)
 
 ## 🛠 Tech Stack
 
@@ -31,18 +37,25 @@
 **Tools**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
----
+<img src="./assets/divider.svg" alt="" width="100%"/>
 
 ## 📂 Projects
 
 ### 🏥 IoT-Based Hyperbaric Oxygen Chamber Control System
 > Graduate Thesis · 사물인터넷(IoT) 기술을 활용한 안드로이드OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발에 관한 연구  
 > *Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology*
+<<<<<<< HEAD
 > 
 - Schematic design using PADS Logic
 - Component selection based on datasheet review (sensors & valve)
 - Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
   
+=======
+
+- Schematic design using PADS Logic
+- Component selection based on datasheet review (sensors & valve)
+- Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
+>>>>>>> 96c2402 ( md 파일 수정)
 - PID control (4–20 mA proportional valve)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
 - Digital isolators (ADUM1400 / ADUM1200 / ISO7421)
@@ -51,7 +64,10 @@
   - HX93BDC · 온습도 센서 (4–20 mA)
   - AO-09 · 산소 농도 센서 (9–13 mV)
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
+<<<<<<< HEAD
     
+=======
+>>>>>>> 96c2402 ( md 파일 수정)
 - 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
   
@@ -78,10 +94,14 @@
 - External EEPROM (D24FC512) interfacing
 - ADC-based analog sensor acquisition
 
----
+<img src="./assets/divider.svg" alt="" width="100%"/>
 
 ## 📫 Contact
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/bromine1997)
 [![Blog](https://img.shields.io/badge/Blog-20C997?style=flat&logo=velog&logoColor=white)](https://bromine1997.tistory.com/)
+
+<div align="center">
+  <img src="./assets/footer.svg" alt="" width="100%"/>
+</div>

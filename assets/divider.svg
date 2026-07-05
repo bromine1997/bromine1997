@@ -1,0 +1,24 @@
+<svg viewBox="0 0 880 26" width="880" height="26" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
+  <defs>
+    <path id="dl" d="M30 13 L850 13"/>
+    <path id="dr" d="M850 13 L30 13"/>
+  </defs>
+  <style>
+    .trace { fill:none; stroke:#5a4426; stroke-width:2; stroke-linecap:round; }
+    .p { fill:none; stroke-width:2.2; stroke-linecap:round;
+         stroke-dasharray:30 1000; stroke-dashoffset:1030;
+         animation:flow linear infinite; }
+    .pg { stroke-width:7; opacity:.2; }
+    @keyframes flow { to { stroke-dashoffset:0; } }
+    .amber { stroke:#ffc861; animation-duration:4.2s; animation-delay:-1s; }
+    .cyan  { stroke:#58e6ff; animation-duration:5.1s; animation-delay:-3s; }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
+  </style>
+  <use href="#dl" class="trace"/>
+  <use href="#dl" class="p pg amber"/><use href="#dl" class="p amber"/>
+  <use href="#dr" class="p pg cyan"/><use href="#dr" class="p cyan"/>
+  <g fill="#0d1117" stroke="#b58b3c" stroke-width="2">
+    <circle cx="24" cy="13" r="4"/><circle cx="856" cy="13" r="4"/>
+  </g>
+  <rect x="433" y="6" width="14" height="14" rx="2" transform="rotate(45 440 13)" fill="#161b22" stroke="#4d5966"/>
+</svg>
