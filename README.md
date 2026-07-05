@@ -18,7 +18,7 @@
 
 - Schematic design using PADS Logic
 - Component selection based on datasheet review (sensors & valve)
-- Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
+- Solenoid driver (DRV110) with Peak-and-Hold PWM — 소비전력 66% 감소
 - PID control (4–20 mA proportional valve)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
 - Digital isolators (ADUM1400 / ADUM1200 / ISO7421)
@@ -27,7 +27,6 @@
   - HX93BDC · 온습도 센서 (4–20 mA)
   - AO-09 · 산소 농도 센서 (9–13 mV)
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
-- 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
 
 </details>
@@ -64,13 +63,21 @@
 
 </details>
 
+<img src="./assets/section-activity.svg" alt="Activity" width="100%"/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake.svg" width="100%"/>
+</picture>
+
 <img src="./assets/section-contact.svg" alt="Contact" width="100%"/>
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://bromine1997.github.io/portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bromine1997)
-[![Blog](https://img.shields.io/badge/Blog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://bromine1997.tistory.com/)
+[![Blog](https://img.shields.io/badge/Blog-20C997?style=for-the-badge&logo=hugo&logoColor=white)](https://bromine1997.github.io/)
 
 </div>
 

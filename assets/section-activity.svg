@@ -1,17 +1,17 @@
-<svg viewBox="0 0 880 44" width="880" height="44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CONTACT">
+<svg viewBox="0 0 880 44" width="880" height="44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ACTIVITY">
   <defs><path id="sl" d="M260 22 L850 22"/></defs>
   <style>
     .silks { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
     .trace { fill:none; stroke:#5a4426; stroke-width:2; stroke-linecap:round; }
-    .p  { fill:none; stroke:#ffc861; stroke-width:2.2; stroke-linecap:round; stroke-dasharray:26 1000; stroke-dashoffset:1026; animation:flow 4.5s linear infinite; animation-delay:-0.3s; }
+    .p  { fill:none; stroke:#58e6ff; stroke-width:2.2; stroke-linecap:round; stroke-dasharray:26 1000; stroke-dashoffset:1026; animation:flow 4.6s linear infinite; animation-delay:-1.6s; }
     .pg { stroke-width:7; opacity:.2; }
     @keyframes flow { to { stroke-dashoffset:0; } }
     @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
   </style>
   <rect x="1" y="1" width="878" height="42" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
-  <rect x="14" y="15" width="14" height="14" rx="2" transform="rotate(45 21 22)" fill="#161b22" stroke="#ffc861" stroke-width="1.6"/>
+  <rect x="14" y="15" width="14" height="14" rx="2" transform="rotate(45 21 22)" fill="#161b22" stroke="#58e6ff" stroke-width="1.6"/>
   <text x="44" y="29" class="silks" font-size="17" font-weight="700" fill="#e6edf3" letter-spacing="1">
-    <tspan fill="#4d5966">0x04</tspan>  <tspan fill="#ffc861">//</tspan> CONTACT
+    <tspan fill="#4d5966">0x03</tspan>  <tspan fill="#58e6ff">//</tspan> ACTIVITY
   </text>
   <use href="#sl" class="trace"/>
   <use href="#sl" class="p pg"/><use href="#sl" class="p"/>
