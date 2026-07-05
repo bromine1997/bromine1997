@@ -2,39 +2,32 @@
   <img src="./assets/header.svg" alt="서보민 (Bromine) — Embedded Developer" width="100%"/>
 </div>
 
-<<<<<<< HEAD
-**문제를 해결하는 임베디드 개발자입니다.**  
-*An embedded developer driven by the need to solve problems.*
-
----
-=======
 <img src="./assets/divider.svg" alt="" width="100%"/>
->>>>>>> 96c2402 ( md 파일 수정)
 
 ## 🛠 Tech Stack
 
-**MCU**  
+**MCU**
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![ATmega](https://img.shields.io/badge/ATmega-00979D?style=flat&logo=arduino&logoColor=white)
 ![TinkerBoard2S](https://img.shields.io/badge/Tinker%20Board%202S-E6522C?style=flat&logo=asus&logoColor=white)
 
-**Language**  
+**Language**
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
 
-**IDE**  
+**IDE**
 ![Microchip Studio](https://img.shields.io/badge/Microchip%20Studio-EE1C25?style=flat)
 ![Keil uVision](https://img.shields.io/badge/Keil%20uVision-00599C?style=flat)
 ![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878A?style=flat&logo=arduino&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white)
 
-**PCB Design**  
+**PCB Design**
 ![PADS](https://img.shields.io/badge/PADS-0078D7?style=flat)
 
-**Tools**  
+**Tools**
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 <img src="./assets/divider.svg" alt="" width="100%"/>
@@ -42,20 +35,12 @@
 ## 📂 Projects
 
 ### 🏥 IoT-Based Hyperbaric Oxygen Chamber Control System
-> Graduate Thesis · 사물인터넷(IoT) 기술을 활용한 안드로이드OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발에 관한 연구  
+> Graduate Thesis · 사물인터넷(IoT) 기술을 활용한 안드로이드OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발에 관한 연구
 > *Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology*
-<<<<<<< HEAD
-> 
-- Schematic design using PADS Logic
-- Component selection based on datasheet review (sensors & valve)
-- Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
-  
-=======
 
 - Schematic design using PADS Logic
 - Component selection based on datasheet review (sensors & valve)
 - Solenoid driver (DRV110) with Peak-and-Hold PWM for power efficiency
->>>>>>> 96c2402 ( md 파일 수정)
 - PID control (4–20 mA proportional valve)
 - SPI ADC (MAX1032), DAC Daisy Chain (AD5420)
 - Digital isolators (ADUM1400 / ADUM1200 / ISO7421)
@@ -64,17 +49,14 @@
   - HX93BDC · 온습도 센서 (4–20 mA)
   - AO-09 · 산소 농도 센서 (9–13 mV)
   - SprintIR-WX-100 · CO₂ 농도 센서 (UART)
-<<<<<<< HEAD
-    
-=======
->>>>>>> 96c2402 ( md 파일 수정)
 - 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
-  
+
 ---
 
 ### 🚲 Rehabilitation Bicycle Force Measurement System
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
+
 - 4× ADS1232 interrupt-driven SPI
 - Synchronized acquisition across channels
 - 2MB PSRAM for extended data logging
