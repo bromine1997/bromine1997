@@ -71,6 +71,8 @@
   <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 
+<img src="./assets/activity-frame-bottom.svg" alt="" width="100%"/>
+
 <img src="./assets/section-contact.svg" alt="Contact" width="100%"/>
 
 <div align="center">
