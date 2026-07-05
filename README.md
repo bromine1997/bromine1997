@@ -6,6 +6,8 @@
 
 <img src="./assets/tech-stack.svg" alt="MCU: STM32, ESP32, ATmega, Tinker Board 2S / Language: C, C++, Java / PCB: PADS / Tools: Git / IDE: STM32CubeIDE, Keil uVision, Microchip Studio, Arduino IDE, Android Studio" width="100%"/>
 
+<img src="./assets/divider.svg" alt="" width="100%"/>
+
 <img src="./assets/section-projects.svg" alt="Projects" width="100%"/>
 
 <img src="./assets/project-hbot.svg" alt="IoT-Based Hyperbaric Oxygen Chamber Control System" width="100%"/>
@@ -31,6 +33,8 @@
 
 </details>
 
+<img src="./assets/divider.svg" alt="" width="100%"/>
+
 <img src="./assets/project-bike.svg" alt="Rehabilitation Bicycle Force Measurement System" width="100%"/>
 
 <details>
@@ -46,6 +50,8 @@
 - Component selection based on datasheet review
 
 </details>
+
+<img src="./assets/divider.svg" alt="" width="100%"/>
 
 <img src="./assets/project-atmega.svg" alt="ATmega4809 Peripheral Control System" width="100%"/>
 
@@ -63,15 +69,13 @@
 
 </details>
 
+<img src="./assets/divider.svg" alt="" width="100%"/>
+
 <img src="./assets/section-activity.svg" alt="Activity" width="100%"/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/bromine1997/bromine1997/output/github-contribution-grid-snake.svg" width="100%"/>
-</picture>
+<img src="./assets/activity-grid.svg" alt="Activity" width="100%"/>
 
-<img src="./assets/activity-frame-bottom.svg" alt="" width="100%"/>
+<img src="./assets/divider.svg" alt="" width="100%"/>
 
 <img src="./assets/section-contact.svg" alt="Contact" width="100%"/>
 
