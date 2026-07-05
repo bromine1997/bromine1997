@@ -1,0 +1,58 @@
+<svg viewBox="0 0 880 250" width="880" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rehabilitation Bicycle Force Measurement System">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#141c26" stroke-width="1"/>
+    </pattern>
+    <clipPath id="scope2"><rect x="32" y="82" width="300" height="140" rx="4"/></clipPath>
+    <!-- one pedal-stroke period = 60px, repeated to 720px -->
+    <path id="w" d="M0 0 q15 -16 30 -1 q15 12 30 1 q15 -16 30 -1 q15 12 30 1 q15 -16 30 -1 q15 12 30 1 q15 -16 30 -1 q15 12 30 1 q15 -16 30 -1 q15 12 30 1 q15 -16 30 -1 q15 12 30 1" fill="none"/>
+  </defs>
+  <style>
+    .silks { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
+    .kr    { font-family:'Malgun Gothic','Apple SD Gothic Neo','Segoe UI',sans-serif; }
+    .wave  { stroke-width:1.8; stroke-linecap:round; animation:scroll linear infinite; }
+    @keyframes scroll { from{transform:translateX(0)} to{transform:translateX(-60px)} }
+    .ledR  { animation:blink 0.8s steps(1,end) infinite; }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:.12} }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
+  </style>
+
+  <rect x="1" y="1" width="878" height="248" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <rect x="676" y="24" width="140" height="22" rx="11" fill="#161b22" stroke="#3a4654"/>
+  <text x="746" y="39" text-anchor="middle" class="silks" font-size="10" fill="#58e6ff" letter-spacing="1">4CH DAQ SYSTEM</text>
+  <circle class="ledR" cx="840" cy="35" r="4" fill="#58a6ff"/>
+
+  <text x="32" y="42" class="silks" font-size="18" font-weight="700" fill="#ffc861">Rehabilitation Bicycle Force Measurement System</text>
+  <text x="32" y="64" class="kr" font-size="11.5" fill="#8b949e">ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템 — 재활운동 힘 데이터 실시간 모니터링</text>
+
+  <!-- oscilloscope: 4 scrolling channels -->
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="#0a0e13" stroke="#263238"/>
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="url(#grid2)"/>
+  <g clip-path="url(#scope2)">
+    <g transform="translate(32 112)"><use href="#w" class="wave" stroke="#ffc861" style="animation-duration:1.6s"/></g>
+    <g transform="translate(32 142)"><use href="#w" class="wave" stroke="#58e6ff" style="animation-duration:2.1s"/></g>
+    <g transform="translate(32 172)"><use href="#w" class="wave" stroke="#3fb950" style="animation-duration:1.8s"/></g>
+    <g transform="translate(32 202)"><use href="#w" class="wave" stroke="#ff7b72" style="animation-duration:2.4s"/></g>
+  </g>
+  <g class="silks" font-size="8" fill="#4d5966">
+    <text x="44" y="97" letter-spacing="1">LOAD CELL · SYNCHRONIZED ACQUISITION</text>
+    <text x="40" y="109" fill="#ffc861">CH1</text>
+    <text x="40" y="139" fill="#58e6ff">CH2</text>
+    <text x="40" y="169" fill="#3fb950">CH3</text>
+    <text x="40" y="199" fill="#ff7b72">CH4</text>
+  </g>
+  <text x="316" y="214" text-anchor="end" class="silks" font-size="8" fill="#4d5966">ADS1232 × 4</text>
+
+  <!-- specs -->
+  <g class="silks" font-size="11.5" fill="#c9d1d9">
+    <text x="356" y="110"><tspan fill="#ffc861">▸</tspan> 4× ADS1232 interrupt-driven SPI</text>
+    <text x="356" y="140"><tspan fill="#ffc861">▸</tspan> Channel-synchronized acquisition</text>
+    <text x="356" y="170"><tspan fill="#ffc861">▸</tspan> 2MB PSRAM extended data logging</text>
+    <text x="624" y="110"><tspan fill="#58e6ff">▸</tspan> SPIFFS + WebSocket monitoring</text>
+    <text x="624" y="140"><tspan fill="#58e6ff">▸</tspan> Text / Binary selectable storage</text>
+    <text x="624" y="170"><tspan fill="#58e6ff">▸</tspan> Datasheet-driven part selection</text>
+  </g>
+
+  <text x="356" y="230" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">MODULE 02 · REHAB / DAQ · ESP32 FEATHER V2</text>
+</svg>

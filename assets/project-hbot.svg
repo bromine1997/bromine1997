@@ -1,0 +1,61 @@
+<svg viewBox="0 0 880 250" width="880" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IoT-Based Hyperbaric Oxygen Chamber Control System">
+  <defs>
+    <pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#141c26" stroke-width="1"/>
+    </pattern>
+    <clipPath id="scope1"><rect x="32" y="82" width="300" height="140" rx="4"/></clipPath>
+  </defs>
+  <style>
+    .silks { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
+    .kr    { font-family:'Malgun Gothic','Apple SD Gothic Neo','Segoe UI',sans-serif; }
+    .curve { fill:none; stroke:#58e6ff; stroke-width:2.2; stroke-linecap:round;
+             stroke-dasharray:100; stroke-dashoffset:100; }
+    .ledR  { animation:blink 1.1s steps(1,end) infinite; }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:.12} }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
+  </style>
+
+  <rect x="1" y="1" width="878" height="248" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <!-- tag + LED -->
+  <rect x="666" y="24" width="150" height="22" rx="11" fill="#161b22" stroke="#3a4654"/>
+  <text x="741" y="39" text-anchor="middle" class="silks" font-size="10" fill="#ffc861" letter-spacing="1">GRADUATE THESIS</text>
+  <circle class="ledR" cx="840" cy="35" r="4" fill="#3fb950"/>
+
+  <!-- title -->
+  <text x="32" y="42" class="silks" font-size="18" font-weight="700" fill="#ffc861">IoT-Based Hyperbaric Oxygen Chamber Control System</text>
+  <text x="32" y="64" class="kr" font-size="11.5" fill="#8b949e">안드로이드OS 기반 고압산소챔버 제어·모니터링 시스템 — Tinker Board 2S · NestJS · MongoDB · Vue.js</text>
+
+  <!-- oscilloscope: PID step response -->
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="#0a0e13" stroke="#263238"/>
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="url(#grid1)"/>
+  <g clip-path="url(#scope1)">
+    <!-- setpoint -->
+    <line x1="44" y1="130" x2="320" y2="130" stroke="#4d5966" stroke-width="1.2" stroke-dasharray="5 5"/>
+    <!-- step response with slight overshoot, redrawn in a loop -->
+    <path class="curve" pathLength="100"
+      d="M48 204 L86 203 C116 200 114 142 148 129 C163 123.5 168 135 188 131.5 L318 130.8">
+      <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;0.55;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="44" y="97" class="silks" font-size="8" fill="#4d5966" letter-spacing="1">PRESSURE · PID STEP RESPONSE</text>
+  <text x="316" y="126" text-anchor="end" class="silks" font-size="8" fill="#8b949e">SP 3.0 ATA</text>
+  <text x="44" y="214" class="silks" font-size="8.5" fill="#ffc861">overshoot 0.67% · ±0.02 ATA</text>
+  <text x="316" y="214" text-anchor="end" class="silks" font-size="8" fill="#4d5966">t [s]</text>
+
+  <!-- specs -->
+  <g class="silks" font-size="11.5" fill="#c9d1d9">
+    <text x="356" y="102"><tspan fill="#ffc861">▸</tspan> PADS Logic schematic design</text>
+    <text x="356" y="126"><tspan fill="#ffc861">▸</tspan> DRV110 Peak-and-Hold solenoid drive</text>
+    <text x="356" y="150"><tspan fill="#ffc861">▸</tspan> PID control · 4–20 mA prop. valve</text>
+    <text x="356" y="174"><tspan fill="#ffc861">▸</tspan> MAX1032 ADC · AD5420 DAC chain</text>
+    <text x="356" y="198"><tspan fill="#ffc861">▸</tspan> ADUM1400 / ISO7421 isolation</text>
+    <text x="624" y="102"><tspan fill="#58e6ff">▸</tspan> <tspan class="kr">MBS3000 압력 · HX93BDC 온습도</tspan></text>
+    <text x="624" y="126"><tspan fill="#58e6ff">▸</tspan> <tspan class="kr">AO-09 산소 · SprintIR-WX CO₂</tspan></text>
+    <text x="624" y="150"><tspan fill="#58e6ff">▸</tspan> 9-item regulatory validation</text>
+    <text x="624" y="174"><tspan fill="#58e6ff">▸</tspan> WebSocket + REST monitoring</text>
+    <text x="624" y="198"><tspan fill="#58e6ff">▸</tspan> Datasheet-driven part selection</text>
+  </g>
+
+  <text x="356" y="230" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">MODULE 01 · MEDICAL / IoT · ORAL + POSTER PRESENTED</text>
+</svg>

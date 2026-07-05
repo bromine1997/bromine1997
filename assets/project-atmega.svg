@@ -1,0 +1,65 @@
+<svg viewBox="0 0 880 250" width="880" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ATmega4809 Peripheral Control System">
+  <defs>
+    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#141c26" stroke-width="1"/>
+    </pattern>
+    <clipPath id="scope3"><rect x="32" y="82" width="300" height="140" rx="4"/></clipPath>
+    <!-- CLK: 24px period, 720px total -->
+    <path id="clk" d="M0 0 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16 h12 v-16 h12 v16" fill="none"/>
+    <!-- MOSI: 96px period x8 = 768px -->
+    <path id="mosi" d="M0 0 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24 h12 v-16 h24 v16 h24 v-16 h12 v16 h24" fill="none"/>
+    <!-- TX bursts: 160px period x5 = 800px -->
+    <path id="uart" d="M0 0 v-16 h8 v16 h8 v-16 h16 v16 h8 v-16 h8 v16 h112 v-16 h8 v16 h8 v-16 h16 v16 h8 v-16 h8 v16 h112 v-16 h8 v16 h8 v-16 h16 v16 h8 v-16 h8 v16 h112 v-16 h8 v16 h8 v-16 h16 v16 h8 v-16 h8 v16 h112 v-16 h8 v16 h8 v-16 h16 v16 h8 v-16 h8 v16 h112" fill="none"/>
+  </defs>
+  <style>
+    .silks { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
+    .kr    { font-family:'Malgun Gothic','Apple SD Gothic Neo','Segoe UI',sans-serif; }
+    .sig   { stroke-width:1.8; stroke-linejoin:miter; animation:scroll linear infinite; }
+    .sClk  { animation-name:scrollClk;  animation-duration:.7s; }
+    .sMosi { animation-name:scrollMosi; animation-duration:2.4s; }
+    .sUart { animation-name:scrollUart; animation-duration:3.6s; }
+    @keyframes scrollClk  { from{transform:translateX(0)} to{transform:translateX(-24px)} }
+    @keyframes scrollMosi { from{transform:translateX(0)} to{transform:translateX(-96px)} }
+    @keyframes scrollUart { from{transform:translateX(0)} to{transform:translateX(-160px)} }
+    .ledR  { animation:blink 1.4s steps(1,end) infinite; }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:.12} }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
+  </style>
+
+  <rect x="1" y="1" width="878" height="248" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <rect x="686" y="24" width="130" height="22" rx="11" fill="#161b22" stroke="#3a4654"/>
+  <text x="751" y="39" text-anchor="middle" class="silks" font-size="10" fill="#ffc861" letter-spacing="1">BARE-METAL</text>
+  <circle class="ledR" cx="840" cy="35" r="4" fill="#d29922"/>
+
+  <text x="32" y="42" class="silks" font-size="18" font-weight="700" fill="#ffc861">ATmega4809 Peripheral Control System</text>
+  <text x="32" y="64" class="kr" font-size="11.5" fill="#8b949e">레지스터 직접 제어 기반 주변장치 통합 시스템 — Microchip Studio · 인터럽트 구동</text>
+
+  <!-- logic analyzer -->
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="#0a0e13" stroke="#263238"/>
+  <rect x="32" y="82" width="300" height="140" rx="4" fill="url(#grid3)"/>
+  <g clip-path="url(#scope3)">
+    <g transform="translate(60 122)"><use href="#clk"  class="sig sClk"  stroke="#ffc861"/></g>
+    <g transform="translate(60 160)"><use href="#mosi" class="sig sMosi" stroke="#58e6ff"/></g>
+    <g transform="translate(60 198)"><use href="#uart" class="sig sUart" stroke="#3fb950"/></g>
+  </g>
+  <g class="silks" font-size="8" fill="#4d5966">
+    <text x="44" y="97" letter-spacing="1">LOGIC ANALYZER · SPI / UART</text>
+    <text x="38" y="116" fill="#ffc861">CLK</text>
+    <text x="38" y="154" fill="#58e6ff">MOSI</text>
+    <text x="38" y="192" fill="#3fb950">TX</text>
+  </g>
+  <text x="316" y="214" text-anchor="end" class="silks" font-size="8" fill="#4d5966">reg-level impl.</text>
+
+  <!-- specs -->
+  <g class="silks" font-size="11.5" fill="#c9d1d9">
+    <text x="356" y="110"><tspan fill="#ffc861">▸</tspan> <tspan class="kr">SPI · TWI(I2C) · UART 직접 구현</tspan></text>
+    <text x="356" y="140"><tspan fill="#ffc861">▸</tspan> Interrupt-based peripheral handling</text>
+    <text x="356" y="170"><tspan fill="#ffc861">▸</tspan> Stepper motor + rotary switch input</text>
+    <text x="624" y="110"><tspan fill="#58e6ff">▸</tspan> PCF8563 · DS1621 RTC integration</text>
+    <text x="624" y="140"><tspan fill="#58e6ff">▸</tspan> D24FC512 external EEPROM</text>
+    <text x="624" y="170"><tspan fill="#58e6ff">▸</tspan> ADC-based sensor acquisition</text>
+  </g>
+
+  <text x="356" y="230" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">MODULE 03 · AVR / DRIVER · MICROCHIP STUDIO</text>
+</svg>

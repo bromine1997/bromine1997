@@ -5,13 +5,15 @@
     </pattern>
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur stdDeviation="2.6" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58e6ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#58e6ff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#58e6ff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="board"><rect x="1" y="1" width="878" height="228" rx="14"/></clipPath>
 
-    <!-- copper traces (referenced twice: glow layer + pulse layer) -->
     <path id="t1" d="M194 78 L214 78 L244 48 L820 48"/>
     <path id="t2" d="M194 94 L204 94 L264 34 L780 34"/>
     <path id="t3" d="M194 110 L214 110 L289 185 L620 185"/>
@@ -35,23 +37,17 @@
   <style>
     .silks  { font-family:'Cascadia Code','JetBrains Mono',Consolas,'Malgun Gothic',monospace; }
     .kr     { font-family:'Malgun Gothic','Apple SD Gothic Neo','Segoe UI',sans-serif; }
-
     .trace  { fill:none; stroke:#5a4426; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
     .pulseG { fill:none; stroke-width:7;   stroke-linecap:round; opacity:.22; }
     .pulse  { fill:none; stroke-width:2.4; stroke-linecap:round; }
-    .pulseG,.pulse {
-      stroke-dasharray:26 1400; stroke-dashoffset:1426;
-      animation:flow linear infinite;
-    }
+    .pulseG,.pulse { stroke-dasharray:26 1400; stroke-dashoffset:1426; animation:flow linear infinite; }
     @keyframes flow { to { stroke-dashoffset:0; } }
-    .amber { stroke:#ffc861; }
-    .cyan  { stroke:#58e6ff; }
+    .amber { stroke:#ffc861; } .cyan { stroke:#58e6ff; }
     .d1 { animation-duration:3.4s; animation-delay:-0.6s; }
     .d2 { animation-duration:2.8s; animation-delay:-1.9s; }
     .d3 { animation-duration:3.8s; animation-delay:-2.7s; }
     .d4 { animation-duration:3.1s; animation-delay:-1.2s; }
     .d5 { animation-duration:3.6s; animation-delay:-0.2s; }
-
     .chipGlow { animation:breathe 3s ease-in-out infinite; }
     .led-pwr  { animation:breathe 2.4s ease-in-out infinite; }
     @keyframes breathe { 0%,100%{opacity:1} 50%{opacity:.45} }
@@ -61,18 +57,16 @@
     @keyframes flick { 0%,28%{opacity:1} 29%,52%{opacity:.1} 53%,78%{opacity:1} 79%,100%{opacity:.1} }
     .led-rx   { animation:flick2 .94s steps(1,end) infinite; }
     @keyframes flick2 { 0%,18%{opacity:.1} 19%,40%{opacity:1} 41%,66%{opacity:.1} 67%,88%{opacity:1} 89%,100%{opacity:.1} }
-
     .cursor { animation:curBlink 1s steps(1,end) infinite; }
     @keyframes curBlink { 0%,55%{opacity:1} 56%,100%{opacity:0} }
-
+    .scan { animation:sweep 7.5s linear infinite; }
+    @keyframes sweep { from{transform:translateX(-120px)} to{transform:translateX(920px)} }
     @media (prefers-reduced-motion: reduce){ *{ animation:none !important; } }
   </style>
 
-  <!-- board -->
   <rect x="1" y="1" width="878" height="228" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
   <rect x="1" y="1" width="878" height="228" rx="14" fill="url(#dots)"/>
 
-  <!-- fiducial marks -->
   <g stroke="#2a3644" stroke-width="1.5" fill="none">
     <circle cx="28" cy="28" r="6"/><path d="M28 19v18M19 28h18"/>
     <circle cx="852" cy="28" r="6"/><path d="M852 19v18M843 28h18"/>
@@ -80,7 +74,6 @@
     <circle cx="852" cy="202" r="6"/><path d="M852 193v18M843 202h18"/>
   </g>
 
-  <!-- copper traces (base) -->
   <g class="trace">
     <use href="#t1"/><use href="#t2"/><use href="#t3"/><use href="#t4"/><use href="#t5"/>
     <path d="M194 158 L226 158"/>
@@ -89,7 +82,6 @@
     <path d="M66 94 L44 94"/><path d="M66 142 L44 142"/>
   </g>
 
-  <!-- flowing signal pulses -->
   <g>
     <use href="#t1" class="pulseG amber d1"/><use href="#t1" class="pulse amber d1"/>
     <use href="#t2" class="pulseG cyan d2"/><use href="#t2" class="pulse cyan d2"/>
@@ -98,7 +90,6 @@
     <use href="#t5" class="pulseG amber d5"/><use href="#t5" class="pulse amber d5"/>
   </g>
 
-  <!-- vias -->
   <g fill="#0d1117" stroke="#b58b3c" stroke-width="2">
     <circle cx="826" cy="48" r="4"/><circle cx="786" cy="34" r="4"/>
     <circle cx="626" cy="185" r="4"/><circle cx="566" cy="192" r="4"/>
@@ -108,7 +99,6 @@
     <circle cx="38" cy="94" r="4"/><circle cx="38" cy="142" r="4"/>
   </g>
 
-  <!-- decorative silkscreen components -->
   <g class="silks" font-size="7.5" fill="#4d5966">
     <rect x="500" y="43" width="18" height="9" rx="1.5" fill="#161b22" stroke="#4d5966"/>
     <text x="509" y="39" text-anchor="middle">R7</text>
@@ -118,10 +108,8 @@
     <text x="480" y="177" text-anchor="middle">L1</text>
   </g>
 
-  <!-- MCU chip -->
   <rect class="chipGlow" x="66" y="56" width="128" height="128" rx="10" fill="#58e6ff" opacity=".07"/>
   <g fill="#b58b3c">
-    <!-- left / right pins -->
     <g>
       <rect x="54" y="75" width="12" height="6" rx="1"/><rect x="54" y="91" width="12" height="6" rx="1"/>
       <rect x="54" y="107" width="12" height="6" rx="1"/><rect x="54" y="123" width="12" height="6" rx="1"/>
@@ -130,7 +118,6 @@
       <rect x="194" y="107" width="12" height="6" rx="1"/><rect x="194" y="123" width="12" height="6" rx="1"/>
       <rect x="194" y="139" width="12" height="6" rx="1"/><rect x="194" y="155" width="12" height="6" rx="1"/>
     </g>
-    <!-- top / bottom pins -->
     <g>
       <rect x="87" y="44" width="6" height="12" rx="1"/><rect x="103" y="44" width="6" height="12" rx="1"/>
       <rect x="119" y="44" width="6" height="12" rx="1"/><rect x="135" y="44" width="6" height="12" rx="1"/>
@@ -148,18 +135,15 @@
     <text x="130" y="150" font-size="9" fill="#4d5966">EST. 1997 · KR</text>
   </g>
 
-  <!-- name -->
   <text x="252" y="100" class="kr" font-size="34" font-weight="800" fill="#e6edf3">서보민
     <tspan class="silks" dx="12" font-size="21" font-weight="700" fill="#ffc861">· BROMINE</tspan>
   </text>
 
-  <!-- cycling typed subtitles -->
   <g class="silks" font-size="16" fill="#58e6ff">
     <g clip-path="url(#typeA)"><text x="252" y="136" class="kr" font-size="16">문제를 해결하는 임베디드 개발자</text></g>
     <g clip-path="url(#typeB)"><text x="252" y="136">Embedded Firmware Developer</text></g>
     <g clip-path="url(#typeC)"><text x="252" y="136">STM32 · ESP32 · ATmega4809 · Tinker Board 2S</text></g>
   </g>
-  <!-- typing cursors -->
   <g fill="#58e6ff">
     <g><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.333;0.3331;1"/>
       <rect class="cursor" y="121" width="9" height="18" x="254">
@@ -175,10 +159,8 @@
       </rect></g>
   </g>
 
-  <!-- static tagline -->
   <text x="252" y="164" class="silks" font-size="12.5" fill="#8b949e">An embedded developer driven by the need to solve problems.</text>
 
-  <!-- status LEDs -->
   <g filter="url(#glow)">
     <circle class="led-pwr" cx="656" cy="200" r="5" fill="#3fb950"/>
     <circle class="led-sta" cx="708" cy="200" r="5" fill="#d29922"/>
@@ -190,6 +172,10 @@
     <text x="760" y="217">TX</text><text x="812" y="217">RX</text>
   </g>
 
-  <!-- silkscreen footer -->
-  <text x="44" y="217" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">REV 2.6 · PCB-PROFILE-001 · 2026.07 · bromine1997.github.io</text>
+  <text x="44" y="217" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">REV 3.0 · PCB-PROFILE-001 · 2026.07 · bromine1997.github.io</text>
+
+  <!-- sweeping scanline (on top, clipped to board) -->
+  <g clip-path="url(#board)">
+    <rect class="scan" x="0" y="1" width="110" height="228" fill="url(#scan)"/>
+  </g>
 </svg>

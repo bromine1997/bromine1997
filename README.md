@@ -2,39 +2,17 @@
   <img src="./assets/header.svg" alt="서보민 (Bromine) — Embedded Developer" width="100%"/>
 </div>
 
-<img src="./assets/divider.svg" alt="" width="100%"/>
+<img src="./assets/section-tech.svg" alt="Tech Stack" width="100%"/>
 
-## 🛠 Tech Stack
+<img src="./assets/tech-stack.svg" alt="MCU: STM32, ESP32, ATmega, Tinker Board 2S / Language: C, C++, Java / PCB: PADS / Tools: Git / IDE: STM32CubeIDE, Keil uVision, Microchip Studio, Arduino IDE, Android Studio" width="100%"/>
 
-**MCU**
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
-![ATmega](https://img.shields.io/badge/ATmega-00979D?style=flat&logo=arduino&logoColor=white)
-![TinkerBoard2S](https://img.shields.io/badge/Tinker%20Board%202S-E6522C?style=flat&logo=asus&logoColor=white)
+<img src="./assets/section-projects.svg" alt="Projects" width="100%"/>
 
-**Language**
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+<img src="./assets/project-hbot.svg" alt="IoT-Based Hyperbaric Oxygen Chamber Control System" width="100%"/>
 
-**IDE**
-![Microchip Studio](https://img.shields.io/badge/Microchip%20Studio-EE1C25?style=flat)
-![Keil uVision](https://img.shields.io/badge/Keil%20uVision-00599C?style=flat)
-![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
-![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878A?style=flat&logo=arduino&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white)
+<details>
+<summary>&nbsp;🏥 <b>세부 스펙 보기 — HBOT Chamber Control System</b></summary>
 
-**PCB Design**
-![PADS](https://img.shields.io/badge/PADS-0078D7?style=flat)
-
-**Tools**
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
-<img src="./assets/divider.svg" alt="" width="100%"/>
-
-## 📂 Projects
-
-### 🏥 IoT-Based Hyperbaric Oxygen Chamber Control System
 > Graduate Thesis · 사물인터넷(IoT) 기술을 활용한 안드로이드OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발에 관한 연구
 > *Development of an Android OS-Based Control and Monitoring System for Hyperbaric Oxygen Chambers Using Internet of Things (IoT) Technology*
 
@@ -52,9 +30,13 @@
 - 9-item regulatory validation
 - WebSocket + REST API-based IoT monitoring
 
----
+</details>
 
-### 🚲 Rehabilitation Bicycle Force Measurement System
+<img src="./assets/project-bike.svg" alt="Rehabilitation Bicycle Force Measurement System" width="100%"/>
+
+<details>
+<summary>&nbsp;🚲 <b>세부 스펙 보기 — Rehabilitation Bicycle Force Measurement</b></summary>
+
 > ESP32 Feather V2 기반 4채널 로드셀 동기화 수집 시스템
 
 - 4× ADS1232 interrupt-driven SPI
@@ -64,9 +46,13 @@
 - Text / Binary selectable storage
 - Component selection based on datasheet review
 
----
+</details>
 
-### ⚙️ ATmega4809 Peripheral Control System
+<img src="./assets/project-atmega.svg" alt="ATmega4809 Peripheral Control System" width="100%"/>
+
+<details>
+<summary>&nbsp;⚙️ <b>세부 스펙 보기 — ATmega4809 Peripheral Control</b></summary>
+
 > ATmega4809 기반 제어 시스템 · Microchip Studio
 
 - Direct implementation of SPI, TWI(I2C), and UART
@@ -76,13 +62,17 @@
 - External EEPROM (D24FC512) interfacing
 - ADC-based analog sensor acquisition
 
-<img src="./assets/divider.svg" alt="" width="100%"/>
+</details>
 
-## 📫 Contact
+<img src="./assets/section-contact.svg" alt="Contact" width="100%"/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/bromine1997)
-[![Blog](https://img.shields.io/badge/Blog-20C997?style=flat&logo=velog&logoColor=white)](https://bromine1997.tistory.com/)
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://bromine1997.github.io/web-porfolio)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bromine1997)
+[![Blog](https://img.shields.io/badge/Blog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://bromine1997.tistory.com/)
+
+</div>
 
 <div align="center">
   <img src="./assets/footer.svg" alt="" width="100%"/>
