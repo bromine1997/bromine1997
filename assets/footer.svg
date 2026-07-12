@@ -23,7 +23,7 @@
   </g>
 
   <circle class="led" cx="40" cy="68" r="4.5" fill="#3fb950"/>
-  <text x="52" y="72" class="silks" font-size="10" fill="#4d5966">SYSTEM ONLINE · UPTIME ∞</text>
-  <text x="440" y="72" text-anchor="middle" class="silks" font-size="13" fill="#8b949e">// EOF — 방문해 주셔서 감사합니다 · Thanks for visiting</text>
+  <text x="52" y="72" class="silks" font-size="11" fill="#4d5966">SYSTEM ONLINE · UPTIME ∞</text>
+  <text x="440" y="72" text-anchor="middle" class="silks" font-size="14.5" fill="#8b949e">// EOF — 방문해 주셔서 감사합니다 · Thanks for visiting</text>
   <rect class="cursor" x="668" y="59" width="8" height="16" fill="#58e6ff"/>
 </svg>

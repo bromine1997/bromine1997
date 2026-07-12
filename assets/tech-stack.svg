@@ -32,7 +32,7 @@
   <rect x="1" y="1" width="878" height="308" rx="14" fill="url(#dots2)"/>
 
   <!-- group label -->
-  <text x="40" y="26" class="silks" font-size="10" fill="#4d5966" letter-spacing="2">── MCU ──────────────────────────</text>
+  <text x="40" y="27" class="silks" font-size="11" fill="#4d5966" letter-spacing="2">── MCU ──────────────────────────</text>
 
   <!-- MCU bus -->
   <use href="#bus" class="trace"/>
@@ -53,8 +53,8 @@
       </g>
       <rect class="chip" x="40" y="36" width="170" height="68" rx="6"/>
       <circle cx="52" cy="48" r="2.6" fill="#8b949e"/>
-      <text x="125" y="66" text-anchor="middle" class="silks" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">STM32</text>
-      <text x="125" y="86" text-anchor="middle" class="silks" font-size="9" fill="#8b949e">ARM CORTEX-M</text>
+      <text x="125" y="67" text-anchor="middle" class="silks" font-size="18" font-weight="700" fill="#e6edf3" letter-spacing="1">STM32</text>
+      <text x="125" y="87" text-anchor="middle" class="silks" font-size="10" fill="#8b949e">ARM CORTEX-M</text>
       <path class="trace thin" d="M125 116 L125 140"/>
       <path class="v1" d="M125 116 L125 140"/>
     </g>
@@ -66,8 +66,8 @@
       </g>
       <rect class="chip" x="250" y="36" width="170" height="68" rx="6"/>
       <circle cx="262" cy="48" r="2.6" fill="#8b949e"/>
-      <text x="335" y="66" text-anchor="middle" class="silks" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">ESP32</text>
-      <text x="335" y="86" text-anchor="middle" class="silks" font-size="9" fill="#8b949e">XTENSA · Wi-Fi/BT</text>
+      <text x="335" y="67" text-anchor="middle" class="silks" font-size="18" font-weight="700" fill="#e6edf3" letter-spacing="1">ESP32</text>
+      <text x="335" y="87" text-anchor="middle" class="silks" font-size="10" fill="#8b949e">XTENSA · Wi-Fi/BT</text>
       <path class="trace thin" d="M335 116 L335 140"/>
       <path class="v2" d="M335 116 L335 140"/>
     </g>
@@ -79,8 +79,8 @@
       </g>
       <rect class="chip" x="460" y="36" width="170" height="68" rx="6"/>
       <circle cx="472" cy="48" r="2.6" fill="#8b949e"/>
-      <text x="545" y="66" text-anchor="middle" class="silks" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">ATMEGA</text>
-      <text x="545" y="86" text-anchor="middle" class="silks" font-size="9" fill="#8b949e">AVR 8-BIT · 4809</text>
+      <text x="545" y="67" text-anchor="middle" class="silks" font-size="18" font-weight="700" fill="#e6edf3" letter-spacing="1">ATMEGA</text>
+      <text x="545" y="87" text-anchor="middle" class="silks" font-size="10" fill="#8b949e">AVR 8-BIT · 4809</text>
       <path class="trace thin" d="M545 116 L545 140"/>
       <path class="v1" d="M545 116 L545 140" style="animation-delay:-1.1s"/>
     </g>
@@ -92,46 +92,46 @@
       </g>
       <rect class="chip" x="670" y="36" width="170" height="68" rx="6"/>
       <circle cx="682" cy="48" r="2.6" fill="#8b949e"/>
-      <text x="755" y="66" text-anchor="middle" class="silks" font-size="14.5" font-weight="700" fill="#e6edf3" letter-spacing="1">TINKER 2S</text>
-      <text x="755" y="86" text-anchor="middle" class="silks" font-size="9" fill="#8b949e">RK3399 · ANDROID</text>
+      <text x="755" y="67" text-anchor="middle" class="silks" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">TINKER 2S</text>
+      <text x="755" y="87" text-anchor="middle" class="silks" font-size="10" fill="#8b949e">RK3399 · ANDROID</text>
       <path class="trace thin" d="M755 116 L755 140"/>
       <path class="v2" d="M755 116 L755 140" style="animation-delay:-2s"/>
     </g>
   </g>
 
   <!-- Row A: LANGUAGE / PCB / TOOLS -->
-  <text x="40" y="172" class="silks" font-size="10" fill="#4d5966" letter-spacing="2">── LANGUAGE ──</text>
-  <text x="390" y="172" class="silks" font-size="10" fill="#4d5966" letter-spacing="2">── PCB ──</text>
-  <text x="550" y="172" class="silks" font-size="10" fill="#4d5966" letter-spacing="2">── TOOLS ──</text>
+  <text x="40" y="172" class="silks" font-size="11" fill="#4d5966" letter-spacing="2">── LANGUAGE ──</text>
+  <text x="390" y="172" class="silks" font-size="11" fill="#4d5966" letter-spacing="2">── PCB ──</text>
+  <text x="550" y="172" class="silks" font-size="11" fill="#4d5966" letter-spacing="2">── TOOLS ──</text>
   <g>
     <path class="trace thin" d="M85 180 L85 140"/><path class="v1" d="M85 180 L85 140" style="animation-delay:-0.7s"/>
     <path class="trace thin" d="M445 180 L445 140"/>
     <path class="trace thin" d="M595 180 L595 140"/><path class="v2" d="M595 180 L595 140" style="animation-delay:-0.2s"/>
   </g>
-  <g class="silks" font-size="11.5" font-weight="700" fill="#c9d1d9" text-anchor="middle">
-    <g><rect x="34" y="152" width="4" height="6" fill="#b58b3c" transform="translate(0,26)"/><rect class="chip" x="40" y="180" width="90" height="32" rx="4"/><text x="85" y="200">C</text></g>
-    <g><rect class="chip" x="145" y="180" width="90" height="32" rx="4"/><text x="190" y="200">C++</text></g>
-    <g><rect class="chip" x="250" y="180" width="90" height="32" rx="4"/><text x="295" y="200">JAVA</text></g>
-    <g><rect class="chip" x="390" y="180" width="110" height="32" rx="4"/><text x="445" y="200">PADS</text></g>
-    <g><rect class="chip" x="550" y="180" width="90" height="32" rx="4"/><text x="595" y="200">GIT</text></g>
+  <g class="silks" font-size="13" font-weight="700" fill="#c9d1d9" text-anchor="middle">
+    <g><rect x="34" y="152" width="4" height="6" fill="#b58b3c" transform="translate(0,26)"/><rect class="chip" x="40" y="180" width="90" height="32" rx="4"/><text x="85" y="201">C</text></g>
+    <g><rect class="chip" x="145" y="180" width="90" height="32" rx="4"/><text x="190" y="201">C++</text></g>
+    <g><rect class="chip" x="250" y="180" width="90" height="32" rx="4"/><text x="295" y="201">JAVA</text></g>
+    <g><rect class="chip" x="390" y="180" width="110" height="32" rx="4"/><text x="445" y="201">PADS</text></g>
+    <g><rect class="chip" x="550" y="180" width="90" height="32" rx="4"/><text x="595" y="201">GIT</text></g>
   </g>
   <!-- crystal + LEDs on the right of row A -->
   <g>
     <rect class="chip" x="690" y="180" width="120" height="32" rx="16"/>
-    <text x="750" y="200" text-anchor="middle" class="silks" font-size="9.5" fill="#8b949e">XTAL 16.000MHz</text>
+    <text x="750" y="201" text-anchor="middle" class="silks" font-size="10.5" fill="#8b949e">XTAL 16.000MHz</text>
     <circle class="led1" cx="836" cy="188" r="3.6" fill="#3fb950"/>
     <circle class="led2" cx="836" cy="204" r="3.6" fill="#ffc861"/>
   </g>
 
   <!-- Row B: IDE -->
-  <text x="40" y="242" class="silks" font-size="10" fill="#4d5966" letter-spacing="2">── IDE / ENV ─────────────────────</text>
-  <g class="silks" font-size="10.5" font-weight="700" fill="#c9d1d9" text-anchor="middle">
-    <g><rect class="chip" x="40" y="250" width="150" height="32" rx="4"/><text x="115" y="270">STM32CubeIDE</text></g>
-    <g><rect class="chip" x="204" y="250" width="150" height="32" rx="4"/><text x="279" y="270">Keil uVision</text></g>
-    <g><rect class="chip" x="368" y="250" width="160" height="32" rx="4"/><text x="448" y="270">Microchip Studio</text></g>
-    <g><rect class="chip" x="542" y="250" width="130" height="32" rx="4"/><text x="607" y="270">Arduino IDE</text></g>
-    <g><rect class="chip" x="686" y="250" width="154" height="32" rx="4"/><text x="763" y="270">Android Studio</text></g>
+  <text x="40" y="242" class="silks" font-size="11" fill="#4d5966" letter-spacing="2">── IDE / ENV ─────────────────────</text>
+  <g class="silks" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">
+    <g><rect class="chip" x="40" y="250" width="150" height="32" rx="4"/><text x="115" y="271">STM32CubeIDE</text></g>
+    <g><rect class="chip" x="204" y="250" width="150" height="32" rx="4"/><text x="279" y="271">Keil uVision</text></g>
+    <g><rect class="chip" x="368" y="250" width="160" height="32" rx="4"/><text x="448" y="271">Microchip Studio</text></g>
+    <g><rect class="chip" x="542" y="250" width="130" height="32" rx="4"/><text x="607" y="271">Arduino IDE</text></g>
+    <g><rect class="chip" x="686" y="250" width="154" height="32" rx="4"/><text x="763" y="271">Android Studio</text></g>
   </g>
 
-  <text x="40" y="298" class="silks" font-size="8.5" fill="#4d5966" letter-spacing="1">BOM REV 3.0 · ALL COMPONENTS TESTED ✓</text>
+  <text x="40" y="298" class="silks" font-size="9.5" fill="#4d5966" letter-spacing="1">BOM REV 3.0 · ALL COMPONENTS TESTED ✓</text>
 </svg>

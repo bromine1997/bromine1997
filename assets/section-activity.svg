@@ -10,7 +10,7 @@
   </style>
   <rect x="1" y="1" width="878" height="42" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
   <rect x="14" y="15" width="14" height="14" rx="2" transform="rotate(45 21 22)" fill="#161b22" stroke="#58e6ff" stroke-width="1.6"/>
-  <text x="44" y="29" class="silks" font-size="17" font-weight="700" fill="#e6edf3" letter-spacing="1">
+  <text x="44" y="30" class="silks" font-size="19" font-weight="700" fill="#e6edf3" letter-spacing="1">
     <tspan fill="#4d5966">0x03</tspan>  <tspan fill="#58e6ff">//</tspan> ACTIVITY
   </text>
   <use href="#sl" class="trace"/>
